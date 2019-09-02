@@ -50,6 +50,11 @@ texture={
 "svg/scale": 1.0
 }
 
+[layer_names]
+
+2d_physics/layer_1="Pig"
+2d_physics/layer_2="Apples"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
