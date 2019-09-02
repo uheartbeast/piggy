@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Pig.png" type="Texture" id=1]
+[ext_resource path="res://Pig.gd" type="Script" id=1]
+[ext_resource path="res://Pig.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -18,12 +19,13 @@ __meta__ = {
 
 [node name="Pig" type="Area2D" parent="."]
 position = Vector2( 46.9813, 30.4451 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Pig"]
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 offset = Vector2( 0, -4 )
 hframes = 3
 
